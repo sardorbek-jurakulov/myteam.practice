@@ -341,31 +341,25 @@ template {
   display: none;
 }
 
-/* livvic-500italic - latin */
 @font-face {
   font-family: "Livvic";
   font-style: italic;
   font-weight: 500;
   src: url("../fonts/livvic-v5-latin-500italic.woff2") format("woff2"), url("../fonts/livvic-v5-latin-500italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* livvic-600 - latin */
 @font-face {
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/livvic-v5-latin-600.woff2") format("woff2"), url("../fonts/livvic-v5-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* livvic-700 - latin */
 @font-face {
   font-family: "Livvic";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/livvic-v5-latin-700.woff2") format("woff2"), url("../fonts/livvic-v5-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 *,
@@ -436,9 +430,9 @@ body {
 }
 
 .site-header__logo-link {
+  margin-right: 80px;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  margin-right: 80px;
 }
 
 .site-header__logo-link:hover {
@@ -458,20 +452,20 @@ body {
 }
 
 .site-header__feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-width: 180px;
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: -40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-right: 80px;
 }
 
@@ -482,13 +476,14 @@ body {
 }
 
 .site-header__feature-link {
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  text-transform: lowercase;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .site-header__feature-link:hover {
@@ -501,9 +496,9 @@ body {
 
 .contact-us-button-primary-normal-light {
   background-color: transparent;
+  display: inline-block;
   max-width: 159px;
   min-width: 159px;
-  display: inline-block;
   vertical-align: baseline;
   font-weight: 600;
   font-size: 18px;
@@ -512,8 +507,8 @@ body {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-transform: lowercase;
   border-radius: 24px;
   border: 2px solid #fff;
@@ -535,9 +530,9 @@ body {
 
 .contact-us-button-primary-normal-dark {
   background-color: #fff;
+  display: inline-block;
   max-width: 159px;
   min-width: 159px;
-  display: inline-block;
   vertical-align: baseline;
   font-weight: 600;
   font-size: 18px;
@@ -546,8 +541,8 @@ body {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-transform: lowercase;
   border-radius: 24px;
   border: 2px solid #fff;
@@ -570,9 +565,9 @@ body {
 
 .contact-us-button-secondary-normal {
   background-color: #fff;
+  display: inline-block;
   max-width: 159px;
   min-width: 159px;
-  display: inline-block;
   vertical-align: baseline;
   font-weight: 600;
   font-size: 18px;
@@ -581,8 +576,8 @@ body {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-transform: lowercase;
   border-radius: 24px;
   border: 2px solid #fff;

@@ -56,7 +56,7 @@ margin: {
 // nailing to correct the top and bottom margins of the headings ended
 
 
-// h1 mixins started
+// heading mixins started
 
 @mixin h1-large {
   font-style: normal;
@@ -67,6 +67,7 @@ margin: {
 }
 
 @mixin h1-small {
+  font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 56px;
@@ -74,6 +75,7 @@ margin: {
 }
 
 @mixin h2 {
+  font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
@@ -81,15 +83,16 @@ margin: {
 }
 
 @mixin h3 {
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
   color: $dark-green;
 }
 
-// h1 mixins ended
+// heading mixins ended
 
-@mixin body1 {
+@mixin text-md {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -97,7 +100,7 @@ margin: {
   color: $dark-green;
 }
 
-@mixin body2 {
+@mixin text-sm {
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -106,9 +109,9 @@ margin: {
 }
 
 @mixin contact-us-button ($border-color: $white) {
+  display: inline-block;
   max-width: 159px;
   min-width: 159px;
-  display: inline-block;
   vertical-align: baseline;
   font-weight: 600;
   font-size: 18px;
@@ -119,8 +122,8 @@ margin: {
     right: 32px;
     left: 32px;
   }
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-transform: lowercase;
   border-radius: 24px;
   border: 2px solid $border-color;

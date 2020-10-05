@@ -10,8 +10,8 @@
 }
 
 .site-header__logo-link {
-  transition: opacity 0.3s ease;
   margin-right: 80px;
+  transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.6;
@@ -30,13 +30,15 @@
 }
 
 .site-header__feature-list {
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   min-width: 180px;
   @include menyu-list;
-  display: flex;
-  margin-left: -40px;
-  flex-wrap: wrap;
-  margin-right: 80px;
+  margin: {
+    left: -40px;
+    right: 80px;
+  }
 }
 
 .site-header__feature-item {
@@ -45,18 +47,18 @@
 }
 
 .site-header__feature-link {
-  text-decoration: none;
-  color: $white;
-  transition: color 0.3s ease;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-}
+  text-transform: lowercase;
+  color: $white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 
-.site-header__feature-link:hover {
-  color: $light-coral;
+  &:hover {
+    color: $light-coral;
+  }
 }
-
 
 .site-header__contact-us-button {
   margin-left: auto;
