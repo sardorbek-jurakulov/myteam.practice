@@ -1,0 +1,64 @@
+.site-header {
+  background-color: $midnight-green;
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo-link {
+  transition: opacity 0.3s ease;
+  margin-right: 80px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.site-header__logo-img {
+  display: block;
+  width: 160px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.site-header__feature-list {
+  justify-content: space-between;
+  min-width: 180px;
+  @include menyu-list;
+  display: flex;
+  margin-left: -40px;
+  flex-wrap: wrap;
+  margin-right: 80px;
+}
+
+.site-header__feature-item {
+  margin-left: 40px;
+  flex-shrink: 0;
+}
+
+.site-header__feature-link {
+  text-decoration: none;
+  color: $white;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.site-header__feature-link:hover {
+  color: $light-coral;
+}
+
+
+.site-header__contact-us-button {
+  margin-left: auto;
+}
+
