@@ -122,14 +122,16 @@ margin: {
   display: inline-block;
   max-width: 159px;
   min-width: 159px;
+  min-height: 48px;
+  max-height: 48px;
   vertical-align: baseline;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
   padding: {
-    top: 10px;
+    top: 7px;
     right: 32px;
-    bottom: 10px;
+    bottom: 13px;
     left: 32px;
   }
   overflow: hidden;
@@ -138,5 +140,6 @@ margin: {
   border-radius: 24px;
   border: 2px solid $border-color;
   text-decoration: none;
+  white-space: normal;
   transition: all 0.3s ease;
 }

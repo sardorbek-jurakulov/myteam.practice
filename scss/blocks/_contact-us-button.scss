@@ -3,7 +3,13 @@
   @include contact-us-button;
   color: $white;
 
-  &:hover {
+  &:hover, &:active {
+    background-color: $white;
+    color: $dark-green;
+  }
+
+  &:focus {
+    outline: none;
     background-color: $white;
     color: $dark-green;
   }

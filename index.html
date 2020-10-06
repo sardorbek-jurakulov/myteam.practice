@@ -10,7 +10,7 @@
   <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body class="page__body">
-  <!-- HEADER part of page started -->
+  <!-- HEADER part started -->
 
   <header class="site-header">
     <nav class="container site-header__container">
@@ -21,19 +21,23 @@
           <img class="site-header__logo-img" src="./img/logo.svg" alt="logo of myteam" width="160" height="40">
         </picture>
       </a>
-      <ul class="site-header__feature-list">
-        <li class="site-header__feature-item">
-          <a class="site-header__feature-link" href="./home.html">home</a>
-        </li>
-        <li class="site-header__feature-item">
-          <a class="site-header__feature-link" href="./about.html">about</a>
-        </li>
-      </ul>
-      <a class="site-header__contact-us-button contact-us-button-primary-normal-light" href="./contact.html">contact us</a>
+      <button class="site-header__menyu-open-button" type="button" onclick="openHeaderMenyu()">&#9776;</button>
+      <div class="site-header__menyu header-menyu" id="headerMenyu">
+        <a href="javascript:void(0)" class="header-menyu__close-btn" onclick="closeHeaderMenyu()">&times;</a>
+        <ul class="header-menyu__features-list">
+          <li class="header-menyu__feature-item">
+            <a class="header-menyu__feature-link" href="./home.html">home</a>
+          </li>
+          <li class="header-menyu__feature-item">
+            <a class="header-menyu__feature-link" href="./about.html">about</a>
+          </li>
+        </ul>
+        <a class="header-menyu__contact-us-button contact-us-button-primary-normal-light" href="./contact.html">contact us</a>
+      </div>
     </nav>
   </header>
 
-  <!-- HEADER part of page ended -->
+  <!-- HEADER part ended -->
 
 
   <!-- MAIN part of page started -->
