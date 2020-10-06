@@ -31,14 +31,12 @@
 
 .site-header__feature-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 180px;
-  @include menyu-list;
   margin: {
     left: -40px;
     right: 80px;
   }
+  @include menyu-list;
 }
 
 .site-header__feature-item {

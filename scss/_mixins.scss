@@ -23,12 +23,12 @@
 // list by default padding and margin loss styles started
 
 @mixin menyu-list {
-  list-style-type: none;
   margin: {
     top: 0;
     bottom: 0;
   }
   padding-left: 0;
+  list-style-type: none;
 }
 
 // list by default padding and margin loss styles ended
@@ -118,8 +118,8 @@ margin: {
   line-height: 28px;
   padding: {
     top: 10px;
-    bottom: 10px;
     right: 32px;
+    bottom: 10px;
     left: 32px;
   }
   overflow: hidden;
@@ -127,6 +127,6 @@ margin: {
   text-transform: lowercase;
   border-radius: 24px;
   border: 2px solid $border-color;
-  transition: all 0.3s ease;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
