@@ -62,3 +62,18 @@
   margin-left: auto;
 }
 
+@include breakpoint-down (768px) {
+  .site-header__logo-link {
+    margin-right: 48px;
+  }
+
+  .site-header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+
+  .site-header__feature-list {
+    margin-right: 48px;
+  }
+}
+

@@ -490,6 +490,19 @@ body {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .site-header__logo-link {
+    margin-right: 48px;
+  }
+  .site-header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .site-header__feature-list {
+    margin-right: 48px;
+  }
+}
+
 .contact-us-button-primary-normal-light {
   background-color: transparent;
   display: inline-block;

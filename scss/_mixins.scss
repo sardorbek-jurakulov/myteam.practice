@@ -55,6 +55,16 @@ margin: {
 
 // nailing to correct the top and bottom margins of the headings ended
 
+// image in wrapper mixin started
+
+@mixin img-in-box ($img-width, $img-height) {
+  display: block;
+  width: $img-width;
+  height: $img-height;
+  object-fit: cover;
+}
+
+// image in wrapper mixin ended
 
 // heading mixins started
 

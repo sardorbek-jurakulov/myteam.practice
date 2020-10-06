@@ -15,7 +15,11 @@
   <header class="site-header">
     <nav class="container site-header__container">
       <a class="site-header__logo-link" href="#">
-        <img class="site-header__logo-img" src="./img/logo.svg" alt="logo of myteam" width="160" height="40">
+        <picture>
+          <source media="(min-width:769px)" srcset="./img/lg-logo.svg">
+          <source media="(max-width:768px)" srcset="./img/md-logo.svg">
+          <img class="site-header__logo-img" src="./img/logo.svg" alt="logo of myteam" width="160" height="40">
+        </picture>
       </a>
       <ul class="site-header__feature-list">
         <li class="site-header__feature-item">
