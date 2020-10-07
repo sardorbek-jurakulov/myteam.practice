@@ -21,8 +21,8 @@
 }
 
 .contact-us-button-primary-normal-dark {
-  background-color: $white;
-  @include contact-us-button;
+  background-color: transparent;
+  @include contact-us-button ($sacramento-state-green);
   color: $sacramento-state-green;
 
   &:hover {
@@ -53,5 +53,3 @@
     opacity: 0.25;
   }
 }
-
-

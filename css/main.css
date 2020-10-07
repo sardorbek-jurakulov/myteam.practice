@@ -652,7 +652,7 @@ body {
 }
 
 .contact-us-button-primary-normal-dark {
-  background-color: #fff;
+  background-color: transparent;
   display: inline-block;
   max-width: 159px;
   min-width: 159px;
@@ -670,7 +670,7 @@ body {
   text-overflow: ellipsis;
   text-transform: lowercase;
   border-radius: 24px;
-  border: 2px solid #fff;
+  border: 2px solid #012F34;
   text-decoration: none;
   white-space: normal;
   -webkit-transition: all 0.3s ease;
@@ -898,5 +898,32 @@ body {
 .quote-section__quote-author {
   margin-top: 0;
   margin-bottom: 6px;
+}
+
+.ready-started-section {
+  background-color: #F67E7E;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.ready-started-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ready-started-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

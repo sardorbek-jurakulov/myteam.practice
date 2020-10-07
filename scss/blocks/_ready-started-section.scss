@@ -1,0 +1,18 @@
+.ready-started-section {
+  background-color: $light-coral;
+  padding: {
+    top: 76px;
+    bottom: 76px
+  }
+}
+
+.ready-started-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ready-started-section__title {
+  @include h2 ($sacramento-state-green);
+  margin-right: 20px;
+}
