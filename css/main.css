@@ -652,7 +652,7 @@ body {
 }
 
 .contact-us-button-primary-normal-dark {
-  background-color: #fff;
+  background-color: transparent;
   display: inline-block;
   max-width: 159px;
   min-width: 159px;
@@ -670,7 +670,7 @@ body {
   text-overflow: ellipsis;
   text-transform: lowercase;
   border-radius: 24px;
-  border: 2px solid #fff;
+  border: 2px solid #012F34;
   text-decoration: none;
   white-space: normal;
   -webkit-transition: all 0.3s ease;
@@ -725,5 +725,205 @@ body {
 .contact-us-button-secondary-normal:disabled {
   background-color: #fff;
   opacity: 0.25;
+}
+
+.intro-section {
+  background-color: #014E56;
+  color: #fff;
+  padding-top: 129px;
+  padding-bottom: 250px;
+}
+
+.intro-section__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.intro-section__intro-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 635px;
+  padding-right: 102px;
+}
+
+.intro-section__attractive-word {
+  color: #F67E7E;
+}
+
+.intro-section__intro-discription {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  width: 445px;
+}
+
+.benefitial-section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #012F34;
+}
+
+.benefitial-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 58px;
+}
+
+.benefitial-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  width: 445px;
+  margin-right: 125px;
+}
+
+.benefitial-section_list {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 540px;
+}
+
+.benefitial-section_term {
+  color: #F67E7E;
+  margin-bottom: 16px;
+}
+
+.benefitial-section_discription {
+  color: #fff;
+  margin-left: 0;
+  margin-bottom: 32px;
+}
+
+.quote-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #004047;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.quote-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+  width: 932px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+}
+
+.quote-section__important-text {
+  color: #79C8C7;
+}
+
+.quote-section__quote-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  padding-top: 36px;
+  padding-bottom: 11px;
+}
+
+.quote-section__quote-item {
+  width: 350px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.quote-section__quote-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.quote-section__quote-author {
+  color: #79C8C7;
+}
+
+.quote-section__quote-authors-position {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.quote-section__quote-authors-position,
+.quote-section__quote-author {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.ready-started-section {
+  background-color: #F67E7E;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.ready-started-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ready-started-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
