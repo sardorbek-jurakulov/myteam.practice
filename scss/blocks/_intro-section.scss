@@ -1,0 +1,30 @@
+.intro-section {
+  background-color: $midnight-green;
+  color: $white;
+  padding: {
+    top: 129px;
+    bottom: 250px;
+  }
+}
+
+.intro-section__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.intro-section__intro-heading {
+  @include h1-large ($white);
+  @include h-m-control (0, 0);
+  width: 635px;
+  padding-right: 102px;
+}
+
+.intro-section__attractive-word {
+  color: $light-coral;
+}
+
+.intro-section__intro-discription {
+  @include text-md ($white);
+  width: 445px;
+}

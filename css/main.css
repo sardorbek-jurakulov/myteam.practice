@@ -726,4 +726,48 @@ body {
   background-color: #fff;
   opacity: 0.25;
 }
+
+.intro-section {
+  background-color: #014E56;
+  color: #fff;
+  padding-top: 129px;
+  padding-bottom: 250px;
+}
+
+.intro-section__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.intro-section__intro-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 635px;
+  padding-right: 102px;
+}
+
+.intro-section__attractive-word {
+  color: #F67E7E;
+}
+
+.intro-section__intro-discription {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  width: 445px;
+}
 /*# sourceMappingURL=main.css.map */
