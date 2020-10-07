@@ -68,12 +68,12 @@ margin: {
 
 // heading mixins started
 
-@mixin h1-large {
+@mixin h1-large ($h1-color: $white) {
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
   line-height: 100px;
-  color: $dark-green;
+  color: $h1-color;
 }
 
 @mixin h1-small {
@@ -84,12 +84,12 @@ margin: {
   color: $dark-green;
 }
 
-@mixin h2 {
+@mixin h2 ($h2-color) {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
-  color: $dark-green;
+  color: $h2-color;
 }
 
 @mixin h3 {
@@ -102,20 +102,20 @@ margin: {
 
 // heading mixins ended
 
-@mixin text-md {
+@mixin text-md ($text-color: $white) {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: $dark-green;
+  color: $text-color;
 }
 
-@mixin text-sm {
+@mixin text-sm ($text-sm-color: $white) {
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
-  color: $dark-green;
+  color: $text-sm-color;
 }
 
 @mixin contact-us-button ($border-color: $white) {
