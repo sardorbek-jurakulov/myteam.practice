@@ -84,12 +84,12 @@ margin: {
   color: $dark-green;
 }
 
-@mixin h2 {
+@mixin h2 ($h2-color) {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
-  color: $dark-green;
+  color: $h2-color;
 }
 
 @mixin h3 {

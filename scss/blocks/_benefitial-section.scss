@@ -1,0 +1,39 @@
+.benefitial-section {
+  padding: {
+    top: 140px;
+    bottom: 140px;
+  }
+  background-color: $sacramento-state-green;
+}
+
+.benefitial-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 58px;
+}
+
+.benefitial-section__title {
+  @include h2 ($white);
+  width: 445px;
+  margin-right: 125px;
+}
+
+.benefitial-section_list {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  width: 540px;
+}
+
+.benefitial-section_term {
+  color: $light-coral;
+  margin-bottom: 16px;
+}
+
+.benefitial-section_discription {
+  color: $white;
+  margin-left: 0;
+  margin-bottom: 32px;
+}

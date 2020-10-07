@@ -770,4 +770,50 @@ body {
   color: #fff;
   width: 445px;
 }
+
+.benefitial-section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #012F34;
+}
+
+.benefitial-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 58px;
+}
+
+.benefitial-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  width: 445px;
+  margin-right: 125px;
+}
+
+.benefitial-section_list {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 540px;
+}
+
+.benefitial-section_term {
+  color: #F67E7E;
+  margin-bottom: 16px;
+}
+
+.benefitial-section_discription {
+  color: #fff;
+  margin-left: 0;
+  margin-bottom: 32px;
+}
 /*# sourceMappingURL=main.css.map */
