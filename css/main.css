@@ -816,4 +816,87 @@ body {
   margin-left: 0;
   margin-bottom: 32px;
 }
+
+.quote-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #004047;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.quote-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+  width: 932px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+}
+
+.quote-section__important-text {
+  color: #79C8C7;
+}
+
+.quote-section__quote-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  padding-top: 36px;
+  padding-bottom: 11px;
+}
+
+.quote-section__quote-item {
+  width: 350px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.quote-section__quote-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.quote-section__quote-author {
+  color: #79C8C7;
+}
+
+.quote-section__quote-authors-position {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.quote-section__quote-authors-position,
+.quote-section__quote-author {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
 /*# sourceMappingURL=main.css.map */
