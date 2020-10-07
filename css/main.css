@@ -470,7 +470,7 @@ body {
   color: #014E56;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 846px) {
   .site-header__logo-link {
     margin-right: 48px;
   }
@@ -554,7 +554,7 @@ body {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 846px) {
   .header-menyu__features-list {
     margin-right: 48px;
   }
