@@ -84,6 +84,14 @@ margin: {
   color: $h1-small-color;
 }
 
+@mixin h1-extra-small ($h1-extra-small-color: $white) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: $h1-extra-small-color;
+}
+
 @mixin h2 ($h2-color) {
   font-style: normal;
   font-weight: bold;

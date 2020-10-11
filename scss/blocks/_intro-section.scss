@@ -88,3 +88,44 @@
     display: none;
   }
 }
+
+@include breakpoint-down (376px) {
+  .intro-section {
+    padding: {
+      top: 32px;
+      bottom: 197px;
+    }
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom center
+  }
+
+  .intro-section__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro-section__intro-heading {
+    @include h1-extra-small;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: {
+      left: 59px;
+      right: 59px;
+    }
+    text-align: center;
+  }
+
+  .intro-section__intro-discription {
+    position: static;
+    @include text-sm;
+    line-height: 28px;
+    width: 327px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .intro-section__intro-discription::before {
+    display: none;
+  }
+}

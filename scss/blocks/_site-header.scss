@@ -76,3 +76,12 @@
   }
 }
 
+@include breakpoint-down (376px) {
+  .site-header {
+    padding: {
+      top: 48px;
+      bottom: 48px;
+    }
+  }
+}
+

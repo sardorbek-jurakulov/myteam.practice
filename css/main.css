@@ -493,6 +493,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 376px) {
+  .site-header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
 .header-menyu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +846,54 @@ body {
     width: 457px;
     padding-top: 0;
     position: static;
+    text-align: center;
+  }
+  .intro-section__intro-discription::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .intro-section {
+    padding-top: 32px;
+    padding-bottom: 197px;
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom center;
+  }
+  .intro-section__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-section__intro-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 18px;
+    padding-left: 59px;
+    padding-right: 59px;
+    text-align: center;
+  }
+  .intro-section__intro-discription {
+    position: static;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    line-height: 28px;
+    width: 327px;
+    padding-top: 0;
     text-align: center;
   }
   .intro-section__intro-discription::before {
