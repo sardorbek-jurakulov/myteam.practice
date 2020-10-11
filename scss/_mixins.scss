@@ -76,6 +76,14 @@ margin: {
   color: $h1-lage-color;
 }
 
+@mixin h1-medium ($h1-medium-color: $white) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 82px;
+  line-height: 78px;
+  color: $h1-medium-color;
+}
+
 @mixin h1-small ($h1-small-color: $white) {
   font-style: normal;
   font-weight: bold;
@@ -116,6 +124,14 @@ margin: {
   font-size: 18px;
   line-height: 28px;
   color: $text-md-color;
+}
+
+@mixin text-extra-md ($text-extra-md-color: $white) {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: $text-extra-md-color;
 }
 
 @mixin text-sm ($text-sm-color: $white) {

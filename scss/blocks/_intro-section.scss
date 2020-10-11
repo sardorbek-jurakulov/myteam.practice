@@ -14,11 +14,14 @@
 .intro-section__container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 
 .intro-section__intro-heading {
-  @include h1-large ($white);
+  display: flex;
+  align-items: center;
+  // display xususiyati headingni yonidagi description ko'payganda heading unga nisbatan gorizontal yo'nalishda o'rtada turishini boshqarish uchun ishlatildi
+
+  @include h1-large;
   @include h-m-control (0, 0);
   width: 635px;
   padding-right: 102px;
@@ -29,12 +32,14 @@
 }
 
 .intro-section__intro-discription {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
   @include text-md ($white);
   @include p-m-control (0, 0);
   width: 445px;
-  padding-top: 83px;
-  position: relative;
-  z-index: 1;
+  padding-top: 20px;
 }
 
 .intro-section__intro-discription::before {
@@ -48,7 +53,46 @@
   background-color: $rapture-blue;
 }
 
-@include breakpoint-down (768px) {
+@include breakpoint-down (1240px) {
+  .intro-section {
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right calc(50% - 376px);
+  }
+}
+
+@include breakpoint-down (1120px) {
+  .intro-section {
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right calc(50% - 346px);
+  }
+
+  .intro-section__intro-heading {
+    padding-right: 30px;
+  }
+}
+
+@include breakpoint-down (990px) {
+  .intro-section {
+    padding: {
+      top: 48px;
+      bottom: 256px;
+    }
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right calc(50% - 300px);
+  }
+
+  .intro-section__intro-heading {
+    @include h1-medium;
+    padding-right: 53px;
+  }
+
+  .intro-section__intro-discription {
+    @include text-extra-md;
+    padding-top: 45px;
+  }
+}
+
+@include breakpoint-down (863px) {
   .intro-section {
     padding: {
       top: 48px;
@@ -69,8 +113,8 @@
     width: 100%;
     margin-bottom: 24px;
     padding: {
-      left: 175px;
-      right: 175px;
+      left: 213px;
+      right: 213px;
     }
     text-align: center;
   }
@@ -89,7 +133,130 @@
   }
 }
 
-@include breakpoint-down (376px) {
+@include breakpoint-down (803px) {
+  .intro-section {
+    padding: {
+      top: 48px;
+      bottom: 256px;
+    }
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right 50%;
+  }
+
+  .intro-section__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro-section__intro-heading {
+    @include h1-small;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: {
+      left: 183px;
+      right: 183px;
+    }
+    text-align: center;
+  }
+
+  .intro-section__intro-discription {
+    @include text-sm;
+    line-height: 28px;
+    width: 457px;
+    padding-top: 0;
+    position: static;
+    text-align: center;
+  }
+
+  .intro-section__intro-discription::before {
+    display: none;
+  }
+}
+
+@include breakpoint-down (743px) {
+  .intro-section {
+    padding: {
+      top: 48px;
+      bottom: 256px;
+    }
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right 50%;
+  }
+
+  .intro-section__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro-section__intro-heading {
+    @include h1-small;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: {
+      left: 153px;
+      right: 153px;
+    }
+    text-align: center;
+  }
+
+  .intro-section__intro-discription {
+    @include text-sm;
+    line-height: 28px;
+    width: 457px;
+    padding-top: 0;
+    position: static;
+    text-align: center;
+  }
+
+  .intro-section__intro-discription::before {
+    display: none;
+  }
+}
+
+@include breakpoint-down (683px) {
+  .intro-section {
+    padding: {
+      top: 48px;
+      bottom: 256px;
+    }
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right 50%;
+  }
+
+  .intro-section__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro-section__intro-heading {
+    @include h1-small;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: {
+      left: 123px;
+      right: 123px;
+    }
+    text-align: center;
+  }
+
+  .intro-section__intro-discription {
+    @include text-sm;
+    line-height: 28px;
+    width: 457px;
+    padding-top: 0;
+    position: static;
+    text-align: center;
+  }
+
+  .intro-section__intro-discription::before {
+    display: none;
+  }
+}
+
+@include breakpoint-down (623px) {
   .intro-section {
     padding: {
       top: 32px;
@@ -110,8 +277,8 @@
     width: 100%;
     margin-bottom: 18px;
     padding: {
-      left: 59px;
-      right: 59px;
+      left: 170px;
+      right: 170px;
     }
     text-align: center;
   }
