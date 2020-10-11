@@ -480,6 +480,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .site-header {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
 @media only screen and (max-width: 743px) {
   .site-header__menyu-open-button {
     display: inline-block;
@@ -565,7 +572,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 999;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -730,11 +737,15 @@ body {
 .intro-section {
   background-color: #014E56;
   color: #fff;
-  padding-top: 129px;
+  padding-top: 56px;
   padding-bottom: 250px;
+  background-image: url("../img/intro-fitst-img.svg"), url("../img/intro-second-img.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 200px 200px, 358px, 200px;
+  background-position: left calc(50% - 720px) top 56px, bottom right calc(50% - 376px);
 }
 
-.intro-section__text-wrapper {
+.intro-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,7 +779,71 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 445px;
+  padding-top: 83px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-section__intro-discription::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-section {
+    padding-top: 48px;
+    padding-bottom: 256px;
+    background-image: none, url("../img/intro-second-img.svg");
+    background-position: bottom right 50%;
+  }
+  .intro-section__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-section__intro-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 56px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-left: 175px;
+    padding-right: 175px;
+    text-align: center;
+  }
+  .intro-section__intro-discription {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    line-height: 28px;
+    width: 457px;
+    padding-top: 0;
+    position: static;
+    text-align: center;
+  }
+  .intro-section__intro-discription::before {
+    display: none;
+  }
 }
 
 .benefitial-section {

@@ -1,7 +1,9 @@
 .site-header {
   background-color: $midnight-green;
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding: {
+    top: 73px;
+    bottom: 73px;
+  }
 }
 
 .site-header__container {
@@ -56,6 +58,15 @@
   .site-header__logo-img {
     width: 128px;
     height: 32px;
+  }
+}
+
+@include breakpoint-down (768px) {
+  .site-header {
+    padding: {
+      top: 64px;
+      bottom: 64px;
+    }
   }
 }
 

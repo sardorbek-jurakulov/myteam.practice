@@ -68,20 +68,20 @@ margin: {
 
 // heading mixins started
 
-@mixin h1-large ($h1-color: $white) {
+@mixin h1-large ($h1-lage-color: $white) {
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
   line-height: 100px;
-  color: $h1-color;
+  color: $h1-lage-color;
 }
 
-@mixin h1-small {
+@mixin h1-small ($h1-small-color: $white) {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 56px;
-  color: $dark-green;
+  color: $h1-small-color;
 }
 
 @mixin h2 ($h2-color) {
@@ -102,12 +102,12 @@ margin: {
 
 // heading mixins ended
 
-@mixin text-md ($text-color: $white) {
+@mixin text-md ($text-md-color: $white) {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: $text-color;
+  color: $text-md-color;
 }
 
 @mixin text-sm ($text-sm-color: $white) {
@@ -143,3 +143,19 @@ margin: {
   white-space: normal;
   transition: all 0.3s ease;
 }
+
+// media to adapt the background image to retinal screens started
+
+@mixin bg-retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      @content;
+  }
+}
+
+// media to adapt the background image to retinal screens ended
